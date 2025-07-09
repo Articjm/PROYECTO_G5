@@ -40,7 +40,7 @@ st.markdown("Visualización de KPIs semanales y mensuales de mantenimiento mina"
 # --- CARGA DE DATOS ---
 @st.cache_data
 def load_data():
-    archivo = "/Users/carloslazaro/Downloads/CUMPLIMIENTO PLAN (1).xlsm"
+    archivo = "CUMPLIMIENTO_PLAN.xlsm"
     df_plan = pd.read_excel(archivo, sheet_name='IW38 PLAN SEMANAL')
     df_semana = pd.read_excel(archivo, sheet_name='IW38 SEMANA CAL')
     df_bl = pd.read_excel(archivo, sheet_name='BL MENSUALOT')
